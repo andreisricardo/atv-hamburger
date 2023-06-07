@@ -1,0 +1,264 @@
+* {
+    font-family: chercher;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: chercher;
+    src: url("../fonts/chercher-black.otf");
+}
+
+header, .main-section {
+    background-color: rgb(255, 194, 52);
+}
+
+.texto-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    color: rgb(65, 31, 9);
+}
+
+.texto-principal h3 {
+    border: 1px dashed rgb(65, 31, 9);
+    font-size: 1rem;
+    display: flex;
+    width: max-content;
+    padding: 0.8rem;
+}
+
+.texto-principal h1 {
+    font-size: 5rem;
+}
+
+.texto-principal h2 {
+    font-size: 3rem;
+}
+
+.imagem-principal {
+    position: relative;
+}
+
+.imagem-preco {
+    position: absolute;
+    bottom: 0;
+}
+
+.delivery span {
+    color: rgb(65, 31, 9);
+    font-weight: bold;
+}
+
+#hamburguer-today {
+    color: white;
+}
+
+.hamburguer-esquerda {
+    background-image: url("../img/sessao1/fundo1.png");
+    width: 549px;
+    height: 387px;
+    padding: 1rem;
+}
+
+.hamburguer-direita-img1 {
+    background-image: url("../img/sessao1/fundo2.png");
+    width: 548px;
+    height: 177px;
+    padding: 1rem;
+}
+
+.hamburguer-direita-img2 {
+    background-image: url("../img/sessao1/fundo3.png");
+    width: 548px;
+    height: 177px;
+    padding: 1rem;
+}
+
+.menu-textos {
+    color: rgb(65, 31, 9);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-textos h4 {
+    font-size: 1rem;
+    background-color: rgb(255, 194, 52);
+    display: flex;
+    width: max-content;
+    padding: 0.5rem;
+}
+
+.menu-textos h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.menu-textos p {
+    padding: 0 5rem 2rem 5rem;
+}
+
+.card {
+    color: rgb(65, 31, 9);
+    border: none;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.btn-primary {
+    background-color: rgb(223, 28, 28);
+    border: none;
+    font-weight: bold;
+    width: 70%;
+    border-radius: 0px;
+}
+
+.btn-primary:hover {
+    color: rgb(255, 194, 52);
+}
+
+#discover {
+    color: rgb(65, 31, 9);
+}
+
+#discover h4 {
+    font-size: 1.3rem;
+}
+
+#discover h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#discover p {
+    font-size: 0.8rem;
+}
+
+.discover-imagem {
+    width: 100%;
+}
+
+#form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group input {
+    background-color: rgb(255,194,52);
+    color: rgb(65,31,9);
+}
+
+.form-group button {
+    background-color: rgb(223,28,28);
+    border: 0px;
+    border-radius: 5px;
+    flex-grow: calc(1);
+    height: 38px;
+}
+
+footer {
+    background-image: url("../img/rodape/fundo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 483px;
+    color: white;
+}
+
+footer .footer-parte1 .row {
+    height: 350px;
+}
+
+.footer-redes {
+    gap: 10px;
+}
+
+@media (max-width: 980px) {
+
+    * {
+        font-size: 20px;
+    }
+
+    #hamburguer-today .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburguer-direita {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-img-top {
+        width: 40%;
+    }
+
+    .btn-primary {
+        width: 50%;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-logo p {
+        text-align: center;
+    }
+
+    .footer-parte2 .row {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 756px) {
+
+    .card {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1860px){
+    .card-img-top {
+        width: 60%;
+    }
+}
